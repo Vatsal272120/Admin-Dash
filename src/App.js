@@ -1,5 +1,7 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import Sidebar from './Components/Sidebar';
+
 import Topbar from './Components/Topbar';
 
 import Layout from './Hoc/Layout';
