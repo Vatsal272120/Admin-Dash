@@ -1,19 +1,20 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import Sidebar from './Components/Sidebar';
-
 import Topbar from './Components/Topbar';
-
+import Sidebar from './Components/Sidebar';
+import Home from './Pages/Home';
 import Layout from './Hoc/Layout';
 
 const App = () => (
   <Router>
     <Topbar />
-    <Layout />
-    <Switch>
+    <Layout>
       <Sidebar />
-      <Route path='/' />
-    </Switch>
+      <Switch>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
+    </Layout>
   </Router>
 );
 
