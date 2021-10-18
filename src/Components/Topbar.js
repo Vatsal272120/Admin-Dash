@@ -1,10 +1,8 @@
 /* eslint-disable max-len */
 import styled from 'styled-components';
-import {
-  NotificationsNoneIcon,
-  LanguageIcon,
-  SettingsIcon,
-} from '@mui/icons-material';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import LanguageIcon from '@mui/icons-material/Language';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const Topbar = () => (
   <TopbarContainer>
