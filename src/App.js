@@ -3,6 +3,8 @@ import Topbar from './Components/Topbar';
 import Sidebar from './Components/Sidebar';
 import Home from './Pages/Home';
 import Layout from './Hoc/Layout';
+import NewProduct from './Pages/NewProduct';
+import NewUser from './Pages/NewUser';
 
 const App = () => (
   <Router>
@@ -10,6 +12,12 @@ const App = () => (
     <Layout>
       <Sidebar />
       <Switch>
+        <Route path='/newUser'>
+          <NewUser />
+        </Route>
+        <Route path='/newproduct'>
+          <NewProduct />
+        </Route>
         <Route path='/'>
           <Home />
         </Route>
