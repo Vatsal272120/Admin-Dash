@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Layout from './Hoc/Layout';
 import NewProduct from './Pages/NewProduct';
 import NewUser from './Pages/NewUser';
+import Product from './Pages/Product';
 
 const App = () => (
   <Router>
@@ -12,6 +13,9 @@ const App = () => (
     <Layout>
       <Sidebar />
       <Switch>
+        <Route path='/product/:productId'>
+          <Product />
+        </Route>
         <Route path='/newUser'>
           <NewUser />
         </Route>
