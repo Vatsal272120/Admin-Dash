@@ -7,6 +7,7 @@ import NewProduct from './Pages/NewProduct';
 import NewUser from './Pages/NewUser';
 import Product from './Pages/Product';
 import ProductList from './Pages/ProductList';
+import User from './Pages/User ';
 
 const App = () => (
   <Router>
@@ -14,6 +15,9 @@ const App = () => (
     <Layout>
       <Sidebar />
       <Switch>
+        <Route path='/user/:userId'>
+          <User />
+        </Route>
         <Route path='/products'>
           <ProductList />
         </Route>
